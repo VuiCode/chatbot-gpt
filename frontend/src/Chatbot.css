@@ -1,0 +1,64 @@
+
+
+
+/* Outer container for the chatbot */
+.chatbot-container {
+  max-width: 700px;            /* Limit width */
+  margin: 40px auto;            /* Center horizontally with top/bottom margin */
+  font-family: system-ui, sans-serif; /* Clean system font */
+}
+
+/* Title at the top */
+.chatbot-title {
+  margin-bottom: 10px;
+}
+
+/* Chat area */
+.chatbox {
+  border: 1px solid #ccc;       /* Light gray border */
+  border-radius: 8px;           /* Rounded corners */
+  padding: 12px;                /* Inner spacing */
+  height: 360px;                /* Fixed height */
+  overflow-y: auto;             /* Scroll vertically if overflow */
+  background: #fafafa;          /* Light background color */
+}
+
+/* Each message line */
+.chat-message {
+  margin-bottom: 10px;          /* Space between messages */
+}
+
+/* Message text formatting */
+.chat-text {
+  white-space: pre-wrap;        /* Preserve line breaks and spaces */
+}
+
+/* Input + button container */
+.chat-input-container {
+  display: flex;                /* Arrange horizontally */
+  gap: 8px;                     /* Space between input and button */
+  margin-top: 12px;              /* Space above */
+}
+
+/* Textarea styling */
+.chat-input {
+  flex: 1;                      /* Take available width */
+  padding: 10px;                /* Inner spacing */
+  border-radius: 6px;           /* Rounded corners */
+  border: 1px solid #ddd;       /* Light border */
+}
+
+/* Send button styling */
+.chat-send-btn {
+  padding: 0 16px;              /* Horizontal padding */
+  border-radius: 6px;           /* Rounded corners */
+  background: #007bff;          /* Blue background */
+  color: white;                 /* White text */
+  border: none;                 /* Remove border */
+  cursor: pointer;              /* Pointer on hover */
+}
+
+/* Hover effect for send button */
+.chat-send-btn:hover {
+  background: #0056b3;          /* Darker blue on hover */
+}
