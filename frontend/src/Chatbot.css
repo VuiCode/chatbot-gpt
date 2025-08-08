@@ -3,9 +3,14 @@
 
 /* Outer container for the chatbot */
 .chatbot-container {
-  max-width: 700px;            /* Limit width */
-  margin: 40px auto;            /* Center horizontally with top/bottom margin */
+  max-width: 800px;            /* Increased width for better proportion */
+  width: 100%;                 /* Take full available width up to max */
+  margin: 0 auto;              /* Center horizontally, no top/bottom margin */
   font-family: system-ui, sans-serif; /* Clean system font */
+  background: white;           /* White background */
+  border-radius: 12px;         /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;               /* Inner padding */
 }
 
 /* Title at the top */
@@ -15,12 +20,13 @@
 
 /* Chat area */
 .chatbox {
-  border: 1px solid #ccc;       /* Light gray border */
-  border-radius: 8px;           /* Rounded corners */
-  padding: 12px;                /* Inner spacing */
-  height: 360px;                /* Fixed height */
-  overflow-y: auto;             /* Scroll vertically if overflow */
-  background: #fafafa;          /* Light background color */
+  border: 1px solid #e1e1e1;   /* Lighter gray border */
+  border-radius: 12px;         /* More rounded corners */
+  padding: 16px;               /* More inner spacing */
+  height: 400px;               /* Increased height */
+  overflow-y: auto;            /* Scroll vertically if overflow */
+  background: #f8f9fa;         /* Very light background */
+  margin-bottom: 16px;         /* Space below chatbox */
 }
 
 /* Each message line */
