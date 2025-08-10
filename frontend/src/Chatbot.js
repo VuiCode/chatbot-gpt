@@ -27,7 +27,7 @@ function Chatbot() {
 
     try {
       // Send message to Flask backend
-      const res = await axios.post("http://localhost:5000/chat", { message: text });
+      const res = await axios.post("http://localhost:5001/chat", { message: text });
       const replyText = res.data.reply ?? "(no reply)";
 
       // Replace placeholder with real bot reply
